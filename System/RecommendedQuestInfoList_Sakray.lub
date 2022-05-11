@@ -1,0 +1,16 @@
+RecommendedQuestInfoList = {}
+RecommendedQuestInfoList = {
+	[1] = {
+		Title = "你好!欢迎来到RO仙境传说的世界!",
+		IconName = "ico_gq.bmp",
+		Summary = "我们为新手玩家们加油喔!甘巴爹~",
+		NpcSpr = "4_F_01",
+		NpcNavi = "iz_ac01",
+		NpcPosX = 102,
+		NpcPosY = 44,
+		BgName = "reco_01.bmp",
+		QuestInfo1 = { "欢迎欢迎!", "克里图拉学院为了协助新手冒险家，提供各种有益的资讯。如果有尚未造访克里图拉学院的新手冒险家们，记得过来领取有益的资讯和礼包喔!" },
+		QuestInfo2 = { "$$初学者$$欢迎!!", "新手%%礼包%%棒棒@!!赞赞@!!", "&*转职*&谘询 OK!!" },
+		QuestInfo3 = { "^ff0000※本页面不是任务，而是更新介绍，即使完成任务也不会删除。^000000" }
+	}
+}

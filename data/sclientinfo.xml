@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="gbk" ?>
+<clientinfo>
+    <desc>Ragnarok Client Information</desc>
+    <servicetype>korea</servicetype>
+    <servertype>sakray</servertype>
+    <connection>
+        <display>Ragnarok</display>
+        <desc>Ragnarok Online</desc>
+        <balloon></balloon>
+        <address>192.144.210.110</address>
+        <port>6900</port>
+        <version>20</version>
+        <langtype>3</langtype>
+        <registrationweb>http://192.144.210.110</registrationweb>
+    </connection>
+</clientinfo>

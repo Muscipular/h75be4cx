@@ -1,0 +1,614 @@
+tbl = {
+	[1] = {
+		Title = "RO百科",
+		Search = 1,
+		Image = "蜡历牢磐其捞胶\\tipbox\\tip00001",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"输入指令/tip或者点击RO百科图标可以打开RO百科窗口。\\nRO百科中可查看游戏内各种有用的信息。\\n如需更多消息的话也可在^3b488c搜索框^000000中输入想了解的内容。\\nRO百科的内容会持续更新。\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		},
+		PageEX = {
+			{ EffectNum = 0, Twinkle = 1, StartX = 160, StartY = 105, DistX = 0, DistY = 0, MoveTime = 0 }
+		}
+	},
+	[2] = {
+		Title = "help: 指令介绍",
+		Search = 1,
+		Image = "蜡历牢磐其捞胶\\tipbox\\tip00002",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"输入指令/h可获得仙境传说中各种有用的指令。\\n/类型的指令可在^3b488c聊天窗输入^000000使用。\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		}
+	},
+	[3] = {
+		Title = "角色: HP",
+		Search = 1,
+		Image = "蜡历牢磐其捞胶\\tipbox\\tip00003",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"显示角色的生命值。\\n^ff0000HP为0时，角色会死亡并扣除一定比例的经验值^000000，请注意管理自身的HP。\\nAlt+END键可开启或关闭角色下方的HP/SP槽显示。\n\t\t\t\t<TIPBOX>角色: SP<INFO>4</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>自然恢复<INFO>12</INFO></TIPBOX>\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		},
+		PageEX = {
+			{ EffectNum = 3, Twinkle = 1, StartX = 100, StartY = 58, DistX = 0, DistY = 0, MoveTime = 0 },
+			{ EffectNum = 3, Twinkle = 1, StartX = 112, StartY = 260, DistX = 0, DistY = 0, MoveTime = 0 }
+		}
+	},
+	[4] = {
+		Title = "角色: SP",
+		Search = 1,
+		Image = "蜡历牢磐其捞胶\\tipbox\\tip00003",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"显示角色的法力值。\\nSP是^3b488c使用技能时消耗^000000的法力值。\\nSP为0时将无法使用技能，注意管理自己的SP哦。\\nAlt+END键可开启或关闭角色下方的HP/SP槽显示。\n\t\t\t\t<TIPBOX>角色: HP<INFO>3</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>自然恢复<INFO>12</INFO></TIPBOX>\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		},
+		PageEX = {
+			{ EffectNum = 0, Twinkle = 1, StartX = 100, StartY = 105, DistX = 0, DistY = 0, MoveTime = 0 },
+			{ EffectNum = 0, Twinkle = 1, StartX = 110, StartY = 296, DistX = 0, DistY = 0, MoveTime = 0 }
+		}
+	},
+	[5] = {
+		Title = "角色: 升级",
+		Search = 1,
+		Image = "蜡历牢磐其捞胶\\tipbox\\tip00005",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"击杀魔物或者完成任务获得经验值可以升级。\\n角色等级(BaseLv)升级后可获得决定角色基础能力的^3b488c属性点数^000000。\\n职业等级(JobLv)升级后可获得升级技能的^3b488c技能点数^000000。\n\t\t\t\t<TIPBOX>战斗: 经验值<INFO>16</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>角色: 属性<INFO>6</INFO></TIPBOX>\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		},
+		PageEX = {
+			{ EffectNum = 3, Twinkle = 1, StartX = 10, StartY = 265, DistX = 0, DistY = 0, MoveTime = 0 }
+		}
+	},
+	[6] = {
+		Title = "属性: STR(力量)#属性类别",
+		Search = 1,
+		Image = "蜡历牢磐其捞胶\\tipbox\\tip00006",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"增加角色的^3b488c近距离物理攻击力以及角色负重^000000。\n\t\t\t\t<TIPBOX>属性: AGI(敏捷)<INFO>7</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>属性: VIT(体力)<INFO>8</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>属性: INT(智慧)<INFO>9</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>属性: DEX(灵巧)<INFO>10</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>属性: LUK(幸运)<INFO>11</INFO></TIPBOX>\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		},
+		PageEX = {
+			{ EffectNum = 5, Twinkle = 1, StartX = 3, StartY = 193, DistX = 0, DistY = 0, MoveTime = 0 }
+		}
+	},
+	[7] = {
+		Title = "属性: AGI(敏捷)#属性类别",
+		Search = 1,
+		Image = "蜡历牢磐其捞胶\\tipbox\\tip00006",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"增加角色的^3b488c攻速、回避率以及物理防御力^000000。\n\t\t\t\t<TIPBOX>属性: STR(力量)<INFO>6</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>属性: VIT(体力)<INFO>8</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>属性: INT(智慧)<INFO>9</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>属性: DEX(灵巧)<INFO>10</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>属性: LUK(幸运)<INFO>11</INFO></TIPBOX>\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		},
+		PageEX = {
+			{ EffectNum = 5, Twinkle = 1, StartX = 3, StartY = 207, DistX = 0, DistY = 0, MoveTime = 0 }
+		}
+	},
+	[8] = {
+		Title = "属性: VIT(体力)#属性类别",
+		Search = 1,
+		Image = "蜡历牢磐其捞胶\\tipbox\\tip00006",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"增加角色的^3b488c最大生命值、物理防御力、魔法防御力以及自然恢复力^000000。\n\t\t\t\t<TIPBOX>属性: STR(力量)<INFO>6</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>属性: AGI(敏捷)<INFO>7</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>属性: INT(智慧)<INFO>9</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>属性: DEX(灵巧)<INFO>10</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>属性: LUK(幸运)<INFO>11</INFO></TIPBOX>\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		},
+		PageEX = {
+			{ EffectNum = 5, Twinkle = 1, StartX = 3, StartY = 220, DistX = 0, DistY = 0, MoveTime = 0 }
+		}
+	},
+	[9] = {
+		Title = "属性: INT(智慧)#属性类别",
+		Search = 1,
+		Image = "蜡历牢磐其捞胶\\tipbox\\tip00006",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"增加角色的^3b488c魔法攻击力、魔法防御力以及最大法力值^000000。\\n同时，还能减少角色的^3b488c变动咏唱时间^000000。\n\t\t\t\t<TIPBOX>属性: STR(力量)<INFO>6</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>属性: AGI(敏捷)<INFO>7</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>属性: VIT(体力)<INFO>8</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>属性: DEX(灵巧)<INFO>10</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>属性: LUK(幸运)<INFO>11</INFO></TIPBOX>\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		},
+		PageEX = {
+			{ EffectNum = 5, Twinkle = 1, StartX = 3, StartY = 233, DistX = 0, DistY = 0, MoveTime = 0 }
+		}
+	},
+	[10] = {
+		Title = "属性: DEX(灵巧)#属性类别",
+		Search = 1,
+		Image = "蜡历牢磐其捞胶\\tipbox\\tip00006",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"增加角色的^3b488c远程物理攻击力、攻击命中率以及魔法攻击力^000000。\\n同时，还能减少角色的^3b488c变动咏唱时间^000000。\n\t\t\t\t<TIPBOX>属性: STR(力量)<INFO>6</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>属性: AGI(敏捷)<INFO>7</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>属性: VIT(体力)<INFO>8</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>属性: INT(智慧)<INFO>9</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>属性: LUK(幸运)<INFO>11</INFO></TIPBOX>\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		},
+		PageEX = {
+			{ EffectNum = 5, Twinkle = 1, StartX = 3, StartY = 246, DistX = 0, DistY = 0, MoveTime = 0 }
+		}
+	},
+	[11] = {
+		Title = "属性: LUK(幸运)#属性类别",
+		Search = 1,
+		Image = "蜡历牢磐其捞胶\\tipbox\\tip00006",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"增加角色的^3b488c暴击率^000000。还会增加^3b488c命中率、回避率、完全回避率、物理攻击力以及魔法攻击力^000000等，但效果会比其他属性低，因此加点的时候需要注意。\n\t\t\t\t<TIPBOX>属性: STR(力量)<INFO>6</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>属性: AGI(敏捷)<INFO>7</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>属性: VIT(体力)<INFO>8</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>属性: INT(智慧)<INFO>9</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>属性: DEX(灵巧)<INFO>10</INFO></TIPBOX>\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		},
+		PageEX = {
+			{ EffectNum = 5, Twinkle = 1, StartX = 3, StartY = 259, DistX = 0, DistY = 0, MoveTime = 0 }
+		}
+	},
+	[12] = {
+		Title = "自然恢复",
+		Search = 1,
+		Image = "蜡历牢磐其捞胶\\tipbox\\tip00012",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"角色负重在不超过70%的情况下，^3b488cHP和SP会缓慢恢复，坐下时恢复速度为2倍^000000。\n\t\t\t\t<TIPBOX>角色: Weight(负重)<INFO>13</INFO></TIPBOX>\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		}
+	},
+	[13] = {
+		Title = "角色: Weight(负重)",
+		Search = 1,
+		Image = "蜡历牢磐其捞胶\\tipbox\\tip00012",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"现在所持有的道具的重量和角色可持有的最大重量。\\n所持有的道具的重量无法超过角色可持有的最大重量，^ff0000道具的重量超过极限值时，无法继续获得道具。\\nWeight的数值为70%以上时，HP和SP无法自然恢复，为90%以上时，玩家无法攻击或者使用技能。^000000\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		},
+		PageEX = {
+			{ EffectNum = 0, Twinkle = 1, StartX = 100, StartY = 185, DistX = 0, DistY = 0, MoveTime = 0 }
+		}
+	},
+	[14] = {
+		Title = "战斗: 攻击",
+		Search = 1,
+		Image = "蜡历牢磐其捞胶\\tipbox\\tip00014",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"鼠标光标移动到魔物身上时会变成剑的模样。\\n此时，^3b488c点击鼠标左键^000000可以进行攻击。\n\t\t\t\t<TIPBOX>锁定模式: 自动攻击<INFO>15</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>战斗: 经验值<INFO>16</INFO></TIPBOX>\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		}
+	},
+	[15] = {
+		Title = "锁定模式: 自动攻击",
+		Search = 1,
+		Image = "蜡历牢磐其捞胶\\tipbox\\tip00014",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"按住Ctrl键后点击魔物的话，会在魔物死亡前^3b488c自动进行攻击^000000，点击其他地方可以解除该模式。\\n而且，^3b488c输入/noctrl指令后，就算不按着Ctrl键也会进入自动攻击的状态。\\n自动攻击的状态下再次输入/noctrl可以解除自动攻击模式。^000000\n\t\t\t\t<TIPBOX>战斗: 攻击<INFO>14</INFO></TIPBOX>\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		}
+	},
+	[16] = {
+		Title = "战斗: 经验值",
+		Search = 1,
+		Image = "蜡历牢磐其捞胶\\tipbox\\tip00016",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"击杀魔物后可获得^3b488c经验值^000000。\\n从魔物处获得的经验值和对魔物造成的伤害成正比，但即使伤害量差不多，第一个攻击魔物的人会获得更多的经验值。\n\t\t\t\t<TIPBOX>战斗: 攻击<INFO>14</INFO></TIPBOX>\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		}
+	},
+	[17] = {
+		Title = "道具",
+		Search = 1,
+		Image = "蜡历牢磐其捞胶\\tipbox\\tip00017",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"道具掉落在地上后，把鼠标移动至道具上^3b488c点击鼠标左键^000000可以拾取道具。\\n拾取到的道具会进入背包内。\n\t\t\t\t<TIPBOX>道具: 放大镜<INFO>18</INFO></TIPBOX>\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		},
+		PageEX = {
+			{ EffectNum = 5, Twinkle = 1, StartX = 145, StartY = 235, DistX = 0, DistY = 0, MoveTime = 0 }
+		}
+	},
+	[18] = {
+		Title = "道具: 放大镜",
+		Search = 1,
+		Image = "蜡历牢磐其捞胶\\tipbox\\tip00018",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"从魔物处获得的装备类道具是未鉴定的状态，未鉴定的道具需要使用道具店出售的<ITEM>放大镜<INFO>611 放大镜</INFO></ITEM>进行鉴定后才能使用。\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		},
+		PageEX = {
+			{ EffectNum = 5, Twinkle = 1, StartX = 100, StartY = 88, DistX = 0, DistY = 0, MoveTime = 0 }
+		}
+	},
+	[19] = {
+		Title = "社交: 对话",
+		Search = 1,
+		Image = "蜡历牢磐其捞胶\\tipbox\\tip00019",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"通过ENTER键来激活聊天窗。输入想说的话后再次按下ENTER键可发送消息。\n\t\t\t\t<TIPBOX>社交: 聊天室<INFO>20</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>社交: 悄悄话<INFO>21</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>社交: 队伍<INFO>22</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>社交: 公会<INFO>23</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>社交: 聊天窗<INFO>25</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>社交: 内容提示<INFO>26</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>黑名单<INFO>28</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>表情包<INFO>27</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>社交: 保存对话内容<INFO>24</INFO></TIPBOX>\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		},
+		PageEX = {
+			{ EffectNum = 3, Twinkle = 1, StartX = 100, StartY = 280, DistX = 0, DistY = 0, MoveTime = 0 }
+		}
+	},
+	[20] = {
+		Title = "社交: 聊天室",
+		Search = 1,
+		Image = "蜡历牢磐其捞胶\\tipbox\\tip00020",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"/chat可以创建^3b488c聊天室^000000窗口。 通过指令/q可以离开聊天室。\n\t\t\t\t<TIPBOX>社交: 对话<INFO>19</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>社交: 保存对话内容<INFO>24</INFO></TIPBOX>\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		}
+	},
+	[21] = {
+		Title = "社交: 悄悄话",
+		Search = 1,
+		Image = "蜡历牢磐其捞胶\\tipbox\\tip00021",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"在聊天窗左边输入栏内输入角色名可对该名字的角色发送悄悄话。\n\t\t\t\t^3b488cAlt+H^000000键可打开^3b488c好友列表^000000。 \n\t\t\t\t<TIPBOX>黑名单<INFO>28</INFO></TIPBOX>\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		},
+		PageEX = {
+			{ EffectNum = 3, Twinkle = 1, StartX = 30, StartY = 269, DistX = 0, DistY = 0, MoveTime = 0 }
+		}
+	},
+	[22] = {
+		Title = "社交: 队伍",
+		Search = 1,
+		Image = "蜡历牢磐其捞胶\\tipbox\\tip00022",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"如果要和队友对话，可以用\n\t\t\t\t% 想说的话，\n\t\t\t\t或CTRL+ENTER来进行。\\n而且，点击聊天窗右边的^3b488c蓝色圆圈^000000可以^3b488c设定收信对象^000000。\n\t\t\t\t<TIPBOX>社交: 公会<INFO>23</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>队伍系统<INFO>29</INFO></TIPBOX>\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		}
+	},
+	[23] = {
+		Title = "社交: 公会",
+		Search = 1,
+		Image = "蜡历牢磐其捞胶\\tipbox\\tip00023",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"如果要和公会成员对话，可以用\n\t\t\t\t/gc 想说的话，\n\t\t\t\t或者$ 想说的话，\n\t\t\t\t再或者ALT+ENTER来进行。\\n而且，点击聊天窗右边的^3b488c蓝色圆圈^000000可以^3b488c设定收信对象^000000。\n\t\t\t\t<TIPBOX>社交: 队伍<INFO>22</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>公会系统<INFO>30</INFO></TIPBOX>\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		}
+	},
+	[24] = {
+		Title = "社交: 保存对话内容",
+		Search = 1,
+		Image = "蜡历牢磐其捞胶\\tipbox\\tip00024",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"/savechat可以保存聊天内容。\\n对话内容会保存在仙境传说安装目录下的Chat文件夹中。\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		},
+		PageEX = {
+			{ EffectNum = 3, Twinkle = 1, StartX = 100, StartY = 210, DistX = 0, DistY = 0, MoveTime = 0 }
+		}
+	},
+	[25] = {
+		Title = "社交: 聊天窗",
+		Search = 1,
+		Image = "蜡历牢磐其捞胶\\tipbox\\tip00025",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"^3b488cF10^000000可调整聊天窗的大小。\\nAlt+F10可开关聊天窗口。\n\t\t\t\t<TIPBOX>社交: 内容提示<INFO>26</INFO></TIPBOX>\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		},
+		PageEX = {
+			{ EffectNum = 3, Twinkle = 1, StartX = 120, StartY = 150, DistX = 0, DistY = 0, MoveTime = 0 }
+		}
+	},
+	[26] = {
+		Title = "社交: 内容提示",
+		Search = 1,
+		Image = "蜡历牢磐其捞胶\\tipbox\\tip00026",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"聊天窗内输入/notalkmsg时，可设定聊天内容是否显示在聊天窗口。\\n输入/notalkmsg2时，可设定包含公会发言在内的聊天内容是否显示在聊天窗里。\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		}
+	},
+	[27] = {
+		Title = "表情包",
+		Search = 1,
+		Image = "蜡历牢磐其捞胶\\tipbox\\tip00027",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"按下ALT+L键会显示可使用的^3b488c表情包^000000目录。\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		}
+	},
+	[28] = {
+		Title = "黑名单",
+		Search = 1,
+		Image = "蜡历牢磐其捞胶\\tipbox\\tip00028",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"/ex 角色名\n\t\t\t\t可以拉黑该角色的公开发言及悄悄话。\n\t\t\t\t/in 角色名可以解除黑名单。\\n而且，指令/exall和/inall 可以设置将所有悄悄话添加或解除黑名单。\\n想要确认黑名单里有哪些角色时，可输入/ex查看黑名单列表。\\n^ff0000※不会询问(Y/N)，因此需要自己慎重考虑后进行拉黑哦。^000000\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		}
+	},
+	[29] = {
+		Title = "队伍系统",
+		Search = 1,
+		Image = "蜡历牢磐其捞胶\\tipbox\\tip00029",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"/organize 队伍名称来组成队伍。\\n/leave可退出队伍。",
+			"组成队伍并成为队长时，\n\t\t\t\t右击角色选择“邀请加入组队”\n\t\t\t\t或输入/invite 角色名\n\t\t\t\t来邀请玩家加入队伍。\\n输入/expel 角色名\n\t\t\t\t可踢出^3b488c自己为队长的队伍中^000000的队员。\\n^ff0000※不会询问(Y/N)，因此需要自己慎重考虑后进行操作哦。^000000\n\t\t\t\t<TIPBOX>社交: 队伍<INFO>22</INFO></TIPBOX>\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		}
+	},
+	[30] = {
+		Title = "公会系统",
+		Search = 1,
+		Image = "",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"/guild 公会名可创建公会。\n\t\t\t\t创建公会会消耗1个华丽金属。\\n自身所属公会信息可按下ALT+G来查看。\\n^ff0000公会会长可以解散公会。\n\t\t\t\t除了会长外没有任何成员时，\n\t\t\t\t输入/breakguild 公会名称\n\t\t\t\t即可解散公会。\\n※不会询问(Y/N)，因此需要自己慎重考虑后进行操作哦。^000000\n\t\t\t\t<TIPBOX>社交: 公会<INFO>23</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>公会: 职位<INFO>31</INFO></TIPBOX>\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		}
+	},
+	[31] = {
+		Title = "公会: 职位",
+		Search = 1,
+		Image = "",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"公会信息窗口内职位设定栏中可设置公会成员的职位。根据公会职位可赋予各种权限或调整公会成长所需缴纳的经验值的量。\n\t\t\t\t<TIPBOX>公会系统<INFO>30</INFO></TIPBOX>\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		}
+	},
+	[32] = {
+		Title = "游戏菜单栏",
+		Search = 1,
+		Image = "",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"按下ESC可弹出游戏菜单栏。\n\t\t\t\t<TIPBOX>游戏菜单：游戏设置<INFO>33</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>游戏菜单：快捷键设置<INFO>41</INFO></TIPBOX>\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		}
+	},
+	[33] = {
+		Title = "游戏菜单：游戏设置",
+		Search = 1,
+		Image = "",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"为了更加舒适地进行游戏可进行各种设定。\n\t\t\t\t<TIPBOX>游戏设置：高级设置<INFO>40</INFO></TIPBOX>\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		}
+	},
+	[40] = {
+		Title = "游戏设置：高级设置",
+		Search = 1,
+		Image = "",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = { "可调整游戏画面。\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>" }
+	},
+	[41] = {
+		Title = "游戏菜单：快捷键",
+		Search = 1,
+		Image = "",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"可确认快捷键或者修改快捷键。\n\t\t\t\t<TIPBOX>快捷键: 快捷设定<INFO>42</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>快捷键: 技能栏<INFO>43</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>快捷键: 对战模式<INFO>44</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>快捷键: F1~F12<INFO>45</INFO></TIPBOX>\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		}
+	},
+	[42] = {
+		Title = "快捷键: 快捷设定",
+		Search = 1,
+		Image = "",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"ALT+M来设置快捷目录。各个快捷键可对应ALT+1~0。\n\t\t\t\t<TIPBOX>游戏菜单：快捷键<INFO>41</INFO></TIPBOX>\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		}
+	},
+	[43] = {
+		Title = "快捷键: 技能栏",
+		Search = 1,
+		Image = "",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"在技能栏(F12)上登记经常使用的技能或者道具，用鼠标双击或者按下对应快捷键即可快速使用。\\n第一行技能栏对应F1~F9键，在ESC>快捷键设置中可修改对应的快捷键。第2~4行技能栏的快捷键只有在对战模式时才能使用。\\n技能栏中选择要添加的技能或者道具移动到快捷栏中即可添加。 \n\t\t\t\t<TIPBOX>游戏菜单：快捷键<INFO>41</INFO></TIPBOX>\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		}
+	},
+	[44] = {
+		Title = "快捷键: 对战模式",
+		Search = 1,
+		Image = "",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"对战模式即暂时关闭社交功能，在技能栏上添加的快捷键可以快速使用。通过/bm来开启或关闭。\\n^ff0000对战模式中基础社交功能会被关闭，但按下enter键可激活聊天窗口。^000000\n\t\t\t\t<TIPBOX>游戏菜单：快捷键<INFO>41</INFO></TIPBOX>\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		}
+	},
+	[45] = {
+		Title = "快捷键: F1~F12",
+		Search = 1,
+		Image = "",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"F1~F9:可使用技能栏中添加的技能。\\nF10:调节聊天窗的大小。\\nF11:除了基本信息窗口和对话窗外其他窗口全部关闭。\\nF12:可开启或关闭技能栏。\n\t\t\t\t<TIPBOX>游戏菜单：快捷键<INFO>41</INFO></TIPBOX>\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		}
+	},
+	[1000] = {
+		Title = "RO百科: 目录",
+		Search = 1,
+		Image = "",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"可查看目录。\\n目录上未登记的条目可以通过搜索查看，RO百科的内容会持续更新。\n\t\t\t\t<TIPBOX>角色<INFO>1001</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>游戏玩法<INFO>1002</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>社交<INFO>1003</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>仙境传说（RO）世界<INFO>4000</INFO></TIPBOX>"
+		}
+	},
+	[1001] = {
+		Title = "角色",
+		Search = 1,
+		Image = "",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"<TIPBOX>角色: 升级<INFO>5</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>角色: 生命值和法力值<INFO>3</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>角色: 属性<INFO>6</INFO></TIPBOX>\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		}
+	},
+	[1002] = {
+		Title = "游戏玩法",
+		Search = 1,
+		Image = "",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"<TIPBOX>战斗<INFO>14</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>道具<INFO>17</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>游戏菜单栏<INFO>32</INFO></TIPBOX>\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		}
+	},
+	[1003] = {
+		Title = "社交",
+		Search = 1,
+		Image = "",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"<TIPBOX>社交<INFO>19</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>队伍<INFO>29</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>公会<INFO>30</INFO></TIPBOX>\n\t\t\t\t\\n<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		}
+	},
+	[4000] = {
+		Title = "仙境传说的世界",
+		Search = 1,
+		Image = "",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"仙境传说的世界中开启冒险的区域主要有：以人类为中心的米德加尔特大陆，精灵和巨人生存的次元外的异世界，还有充满探索之心的人们找到的未知地区。\n\t\t\t\t\n\t\t\t\t<TIPBOX>米德加尔特大陆<INFO>4001</INFO></TIPBOX>\n\t\t\t\t\n\t\t\t\t<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		}
+	},
+	[4001] = {
+		Title = "米德加尔特大陆",
+		Search = 1,
+		Image = "",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"在神族、魔族还有人类为了自己的信念进行圣战以后，存活下来的人类所生存的地方就是米德加尔特大陆。在米德加尔特大陆的东南部海岸线分布着三个国家。\n\t\t\t\t\n\t\t\t\t<TIPBOX>卢恩·米德加兹王国<INFO>4004</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>秀发兹发德共和国<INFO>4040</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>阿卢纳贝兹教国<INFO>4050</INFO></TIPBOX>\n\t\t\t\t\n\t\t\t\t<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		}
+	},
+	[4004] = {
+		Title = "卢恩·米德加兹王国",
+		Search = 1,
+		Image = "",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"参与圣战的英雄们创立的国家。\n\t\t\t\t以英雄们的后代7大家族为中心的王政体系，居于妙勒尼山脉南部地区。\n\t\t\t\t为了防范威胁王国国民的魔物，积极激励冒险家的养成并给予援助。\n\t\t\t\t\n\t\t\t\t<TIPBOX>首都 普隆德拉<INFO>4005</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>魔法之都 吉芬<INFO>4006</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>沙漠之都 梦罗克<INFO>4007</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>山岳之都 斐扬<INFO>4008</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>港口之都 艾尔贝塔<INFO>4009</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>运河之都 艾尔帕兰<INFO>4010</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>海边之都 克魔岛<INFO>4011</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>雨檀村落 汶巴拉<INFO>4012</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>卫星都市 依斯鲁得岛<INFO>4013</INFO></TIPBOX>\n\t\t\t\t\n\t\t\t\t<TIPBOX>上一页<INFO>4001</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>",
+			"王室会从吉尔伯格、海尔内、内里乌斯、博尔特、雷哈特、维格纳、雷根布尔格7大家族中选出王位继承者成为新一代国王。王室还会在等冬天到来之前举办王室狩猎大赛等活动。"
+		}
+	},
+	[4005] = {
+		Title = "首都 普隆德拉",
+		Search = 1,
+		Image = "",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"卢恩·米德加兹王宫的中心，也是王国的首都。\n\t\t\t\t背靠妙勒尼山脉，拥有广阔的原野，比起其他地区魔物灾害较少，相对比较和平。\n\t\t\t\t还有主神奥丁的大圣堂和骑士团，梦想成为圣职者和骑士的人们也会聚集于此。\n\t\t\t\t\n\t\t\t\t<NAVI>[普隆德拉大圣堂]<INFO>prontera,235,315,0,101,0</INFO></NAVI>\n\t\t\t\t<NAVI>[十字军办公室]<INFO>prt_cas,248,102,0,101,0</INFO></NAVI>\n\t\t\t\t<NAVI>[普隆德拉骑士团]<INFO>prontera,49,342,0,101,0</INFO></NAVI>\n\t\t\t\t<NAVI>[圣·卡毕利那修道院]<INFO>prt_monk,180,205,0,101,0</INFO></NAVI>\n\t\t\t\t\n\t\t\t\t<TIPBOX>上一页<INFO>4004</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		}
+	},
+	[4006] = {
+		Title = "魔法之都 吉芬",
+		Search = 1,
+		Image = "",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"普隆德拉西边湿地的另一边的魔法师们的城市。城市中央有魔塔吉芬塔，据说是过去传说中的城市葛帔尼亚的所在地。经常会举办魔法师们的庆典吉芬魔法大赛。\n\t\t\t\t\n\t\t\t\t<NAVI>[魔法师公会]<INFO>geffen_in,164,124,0,101,0</INFO></NAVI>\n\t\t\t\t<NAVI>[吉芬塔最高层]<INFO>gef_tower,111,27,0,101,0</INFO></NAVI>\n\t\t\t\t<NAVI>[吉芬著名观景台]<INFO>gef_fild07,179,242,0,101,0</INFO></NAVI>\n\t\t\t\t\n\t\t\t\t<TIPBOX>上一页<INFO>4004</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		}
+	},
+	[4007] = {
+		Title = "沙漠之都 梦罗克",
+		Search = 1,
+		Image = "",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"圣战结束后，魔神梦罗克曾来过米德加尔特大陆。在魔剑士达纳托斯的力量下梦罗克被封印了，封印的余波导致附近成为了沙漠，以绿洲为中心形成了城市，因为是梦罗克被封印的地区，城市名字也被起为梦罗克。近期梦罗克突破封印的缘故，附近城市和沙漠都被破坏，从而进行了城市重建。\n\t\t\t\t\n\t\t\t\t<NAVI>[盗贼公会]<INFO>moc_prydb1,39,126,0,101,0</INFO></NAVI>\n\t\t\t\t<NAVI>[刺客公会]<INFO>moc_fild16,206,290,0,101,0</INFO></NAVI>\n\t\t\t\t\n\t\t\t\t<TIPBOX>上一页<INFO>4004</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>",
+			"形成了以绿洲为中心发展的沙漠都市特有的文化，同时还有在古代建造的神秘建筑，旧时代的防御要塞，沙漠的威胁蚂蚁洞等等。\n\t\t\t\t\n\t\t\t\t<NAVI>[金字塔]<INFO>moc_ruins,64,162,0,101,0</INFO></NAVI>\n\t\t\t\t<NAVI>[人面狮身像]<INFO>moc_fild19,105,100,0,101,0</INFO></NAVI>\n\t\t\t\t<NAVI>[山特乐曼要塞]<INFO>cmd_fild08,98,129,0,101,0</INFO></NAVI>\n\t\t\t\t<NAVI>[蚂蚁洞]<INFO>cmd_fild08,326,351,0,101,0</INFO></NAVI>\n\t\t\t\t"
+		}
+	},
+	[4008] = {
+		Title = "山岳之都 斐扬",
+		Search = 1,
+		Image = "",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"位于卢恩·米德加兹东南部的山岳之都，因复杂的山岳与树林，很长时间内和外部断绝了联系，因此也形成了独特的文化。拥有四大圣兽的庇佑等关于圣兽的传说特别多。有很多名射手和猎人，在北边洞穴还有废宅村。\n\t\t\t\t\n\t\t\t\t<NAVI>[弓箭手公会]<INFO>payon_in02,64,71,0,101,0</INFO></NAVI>\n\t\t\t\t<NAVI>[斐扬佛像]<INFO>pay_arche,137,31,0,101,0</INFO></NAVI>\n\t\t\t\t<NAVI>[废宅村]<INFO>pay_dun03,155,147,0,101,0</INFO></NAVI>\n\t\t\t\t\n\t\t\t\t<TIPBOX>上一页<INFO>4004</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		}
+	},
+	[4009] = {
+		Title = "港口之都 艾尔贝塔",
+		Search = 1,
+		Image = "",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"连接米德加兹所有水路的港口城市，因为还有商人公会在此，也称作商业都市。乐于通过水路探索未知世界和对商业感兴趣的人们会聚集于此。\n\t\t\t\t<NAVI>[商人公会]<INFO>alberta_in,56,43,0,101,0</INFO></NAVI>\n\t\t\t\t\n\t\t\t\t<TIPBOX>上一页<INFO>4004</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		}
+	},
+	[4010] = {
+		Title = "运河之都 艾尔帕兰",
+		Search = 1,
+		Image = "",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"妙勒尼山脉北部，位于秀发兹发德的国境线正下方。以中央的巨大钟塔为中心，运河分散在四周，是一座极其美丽的城市，北边有国界检查站。\n\t\t\t\t\n\t\t\t\t<TIPBOX>上一页<INFO>4004</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		}
+	},
+	[4011] = {
+		Title = "海边之都 克魔岛",
+		Search = 1,
+		Image = "",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"包含着西南部海岸下方形成的洞穴的神秘村落，很多旅客都是来这边休养的，因此有很多地区特产。附近的湿地、密林，还有充满秘密的洞穴对冒险家们都有很大的吸引力。\n\t\t\t\t\n\t\t\t\t<TIPBOX>上一页<INFO>4004</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		}
+	},
+	[4012] = {
+		Title = "雨檀村落 汶巴拉",
+		Search = 1,
+		Image = "",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"克魔岛北边密林地带的一个很小的部落村落。与现代文明隔绝，保持了最原始的生活方式。听说世界树的树根也连接到这里。这边的村民不会使用大陆通用语言，这点要注意哦。\n\t\t\t\t\n\t\t\t\t<TIPBOX>上一页<INFO>4004</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		}
+	},
+	[4013] = {
+		Title = "卫星都市 伊斯鲁德",
+		Search = 1,
+		Image = "",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"普隆德拉东边海岸的小城市，为了辅佐首都普隆德拉而形成的卫星城市。为了养成冒险家的支援机关，克里图拉学院和剑士公会都位于这里，也有小小的港口哦。\n\t\t\t\t\n\t\t\t\t<NAVI>[剑士公会]<INFO>izlude_in,74,172</INFO></NAVI>\n\t\t\t\t\n\t\t\t\t<TIPBOX>上一页<INFO>4004</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		}
+	},
+	[4040] = {
+		Title = "秀发兹发德共和国",
+		Search = 1,
+		Image = "",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"以贤者的城市朱诺为首都的位于妙勒尼北部的国家，采用总统和议会的共和政策，因巨大企业雷根贝勒的存在，工业非常发达。\n\t\t\t\t\n\t\t\t\t<TIPBOX>上一页<INFO>4001</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		}
+	},
+	[4050] = {
+		Title = "阿卢纳贝兹教国",
+		Search = 1,
+		Image = "",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = {
+			"信仰女神弗蕾亚的政教一体的宗教国家，在圣战以后，因为宗教的问题和主神为奥丁的卢恩·米德加兹王国有过不太好的回忆。当时因宗教受到迫害的人们移居过去建立的国家就是阿卢纳贝兹，首都拉赫有巨大的神殿瑟斯隆尼勒。\n\t\t\t\t\n\t\t\t\t<TIPBOX>上一页<INFO>4001</INFO></TIPBOX>\n\t\t\t\t<TIPBOX>查看目录<INFO>1000</INFO></TIPBOX>"
+		}
+	},
+	[8086] = {
+		Title = "EL1_A17T 侵入作战",
+		Search = 0,
+		Image = "蜡历牢磐其捞胶\\tipbox\\tip08086",
+		Imgcoord = { Position = 5, Size = 100 },
+		Page = { "把4个位置上埋伏的监视装置无效化后，根据引导靠近EL1_A17T吧。" },
+		PageEX = {
+			{ EffectNum = 4, Twinkle = 1, StartX = 173, StartY = 92, DistX = 0, DistY = 0, MoveTime = 0 },
+			{ EffectNum = 4, Twinkle = 1, StartX = 173, StartY = 154, DistX = 0, DistY = 0, MoveTime = 0 },
+			{ EffectNum = 4, Twinkle = 1, StartX = 120, StartY = 199, DistX = 0, DistY = 0, MoveTime = 0 },
+			{ EffectNum = 4, Twinkle = 1, StartX = 103, StartY = 233, DistX = 0, DistY = 0, MoveTime = 0 }
+		}
+	}
+}
+function main()
+	for DocumentNum, INFO in pairs(tbl) do
+result, msg = AddTip(DocumentNum, INFO.Title, INFO.Search, INFO.Image)
+if not result then
+	return false, msg
+end
+result, msg = AddImgcoord(DocumentNum, INFO.Imgcoord.Position, INFO.Imgcoord.Size)
+if not result then
+	return false, msg
+end
+if not INFO.PageEX then
+	result, msg = AddPageEx(DocumentNum, -1, 0, 0, 0, 0, 0, 0, 0)
+	if not result then
+return false, msg
+	end
+else
+	for k, v in pairs(INFO.PageEX) do
+result, msg = AddPageEx(DocumentNum, v.EffectNum, v.Twinkle, v.StartX, v.StartY, v.DistX, v.DistY, v.MoveTime)
+if not result then
+	return false, msg
+end
+	end
+end
+for k, v in pairs(INFO.Page) do
+	result, msg = AddPage(DocumentNum, v)
+	if not result then
+return false, msg
+	end
+end
+	end
+	return true, "good"
+end
