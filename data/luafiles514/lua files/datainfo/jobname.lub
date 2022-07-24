@@ -5152,5 +5152,6 @@ JobNameTable = {
 	[jobtbl.JT_WILOW_MJ] = "wilow",
 	[jobtbl.JT_WOLF_MJ] = "wolf",
 	[jobtbl.JT_WOLF_Z] = "wolf",
+	[jobtbl.JT_MVP_CLS3_ASSASSINCROSS] = "EREMES",
 	[jobtbl.JT_YOYO_Z] = "yoyo"
 }

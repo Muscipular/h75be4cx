@@ -11,6 +11,16 @@
         <port>6900</port>
         <version>20</version>
         <langtype>3</langtype>
-        <registrationweb>http://192.144.210.110</registrationweb>
+        <registrationweb>http://127.0.0.1</registrationweb>
+    </connection>
+    <connection>
+        <display>Local Test</display>
+        <desc>Ragnarok Online</desc>
+        <balloon></balloon>
+        <address>127.0.0.1</address>
+        <port>6900</port>
+        <version>20</version>
+        <langtype>3</langtype>
+        <registrationweb>http://127.0.0.1</registrationweb>
     </connection>
 </clientinfo>

@@ -3068,9 +3068,9 @@ http://betterra.cn#
 否#
 HP#
 SP#
-等级#
+Level#
 职业等级#
-经验#
+Exp#
 全开#
 录像回访#
 点数#
