@@ -1914,6 +1914,7 @@ JobNameTable = {
 	[jobtbl.JT_JEJELING] = "JEJELING",
 	[jobtbl.JT_BANGUNGOT_1] = "BANGUNGOT",
 	[jobtbl.JT_BANGUNGOT_2] = "BANGUNGOT",
+	[jobtbl.JT_XIAOXI] = "BANGUNGOT",
 	[jobtbl.JT_BUWAYA] = "BUWAYA",
 	[jobtbl.JT_BAKONAWA_1] = "BAKONAWA",
 	[jobtbl.JT_BAKONAWA_2] = "BAKONAWA",
